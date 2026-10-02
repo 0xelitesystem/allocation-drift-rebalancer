@@ -12,12 +12,16 @@ The Portfolio Rebalance Tool takes a set of buckets, each with a current dollar 
 
 Targets that do not sum to 100 percent are flagged, and a single click normalizes them proportionally so the weights balance.
 
-## How to use it
+## Use
 
 1. Open `index.html` in a browser, or visit the GitHub Pages site.
 2. Edit the bucket names, current values, and target percents. Add or remove buckets as needed.
 3. If the targets do not sum to 100 percent, click normalize.
 4. Read the action column for each bucket and the buy and trim totals at the bottom.
+
+## Why this exists
+
+Rebalancing is simple arithmetic, but brokerage and budgeting tools that do it want your account linked first. This is one HTML file that works only on the numbers you type, in your browser, with no tracking. MIT licensed.
 
 ## Inputs and outputs
 
@@ -29,7 +33,20 @@ Target dollars for a bucket equals the portfolio total times that bucket's targe
 
 ## Privacy
 
-Runs fully client side. No analytics, no network calls, no storage. Your numbers never leave the page.
+Runs fully client side. No analytics, no network calls, no storage of anything you enter. The only thing the page writes to your browser is your light or dark theme choice, saved in localStorage under the key `theme` when you press the theme button, so the page opens in the same theme next time. Clear site data to remove it. Your numbers never leave the page.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/portfolio-rebalance-tool
+cd portfolio-rebalance-tool
+```
+
+Then open `index.html` in any browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one file, `index.html`, with its CSS and JavaScript inline.
 
 ## Related tools
 
