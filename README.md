@@ -50,7 +50,7 @@ No build step. The whole tool is one file, `index.html`, with its CSS and JavaSc
 
 ## Related tools
 
-- [position-sizing-calculator](https://github.com/0xelitesystem/position-sizing-calculator)
+- [position-size-risk-math](https://github.com/0xelitesystem/position-size-risk-math)
 - [dca-visualizer](https://github.com/0xelitesystem/dca-visualizer)
 
 ## More
