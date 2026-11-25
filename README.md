@@ -1,14 +1,14 @@
-# Portfolio Rebalance Tool
+# Allocation Drift Rebalancer
 
 Set target allocations across buckets, enter what you currently hold in each, and get the exact dollar amount to buy or trim in every bucket to return to target. The tool runs entirely in your browser, shows current versus target as paired bars, and totals the buys and trims.
 
-**Live demo:** https://0xelitesystem.github.io/portfolio-rebalance-tool/
+**Live demo:** https://0xelitesystem.github.io/allocation-drift-rebalancer/
 
 **Not financial advice.** This is arithmetic on numbers you type. It does not know your tax situation, trading costs, or what you should own. It only computes the deltas between your current and target weights.
 
 ## What it does
 
-The Portfolio Rebalance Tool takes a set of buckets, each with a current dollar value and a target percent, and computes the rebalance. It sums your holdings to a total, multiplies that total by each target percent to get the target dollar amount, and reports the difference as a buy or a trim. Buckets within half a percent of target are marked hold.
+The Allocation Drift Rebalancer takes a set of buckets, each with a current dollar value and a target percent, and computes the rebalance. It sums your holdings to a total, multiplies that total by each target percent to get the target dollar amount, and reports the difference as a buy or a trim. Buckets within half a percent of target are marked hold.
 
 Targets that do not sum to 100 percent are flagged, and a single click normalizes them proportionally so the weights balance.
 
@@ -38,8 +38,8 @@ Runs fully client side. No analytics, no network calls, no storage of anything y
 ## Run locally
 
 ```
-git clone https://github.com/0xelitesystem/portfolio-rebalance-tool
-cd portfolio-rebalance-tool
+git clone https://github.com/0xelitesystem/allocation-drift-rebalancer
+cd allocation-drift-rebalancer
 ```
 
 Then open `index.html` in any browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
